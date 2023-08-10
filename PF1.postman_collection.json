@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "fa9419b6-5ed3-4d91-befa-2bc687f68311",
+		"name": "PF1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28970045"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Products Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Samsung S23\",\r\n    \"description\": \"Celular Samsung S23\",\r\n    \"code\": 4568636,\r\n    \"price\": 456988,\r\n    \"status\": \"Nuevo\",\r\n    \"stock\": 25,\r\n    \"category\": \"celulares\",\r\n    \"thumbnails\": [\r\n        \"celular.jpg\",\r\n        \"celular2.jpg\"\r\n    ]\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Products Multer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Samsung A7",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Celular Samsung A7",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "abc86336",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "150000",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "celulares",
+							"type": "text"
+						},
+						{
+							"key": "thumbails",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Carts Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Carts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/api/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "Carts Id Product Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/api/carts/7/products/3"
+			},
+			"response": []
+		}
+	]
+}
