@@ -13,7 +13,7 @@ git clone https://github.com/javalos87/PF1.git
 
 ```
 
-### Para correrlo ejecuto el siguiente comando
+### Para correrlo ejecutar el siguiente comando
 
 ```
 
